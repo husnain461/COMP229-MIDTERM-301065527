@@ -1,0 +1,57 @@
+<% include ../partials/header.ejs %>
+<!--Husnain ali, 301065527-->
+<!-- add page -->
+<div class="containeer">
+    <div class="row">
+        <div class="offset-md-5 col-md-6">
+        <h1>Favorite</h1>
+
+        <form class="form" method="POST">
+            <div class="from-group">
+                <label for="NameTextField">Book Title</label>
+                <input type="text" class="form-control"
+                id="NameTextField"
+                placeholder="Book's Title"
+                name="title" required>
+            </div>
+
+
+            <div class="from-group">
+                <label for="PriceTextField">Price</label>
+                <input type="number" class="form-control"
+                id="PriceTextField"
+                placeholder="Book's Price"
+                name="price" required>
+            </div>
+
+            <div class="from-group">
+                <label for="AuthorTextField">Author</label>
+                <input type="text" class="form-control"
+                id="AuthorTextField"
+                placeholder="Book's Author"
+                name="author" required>
+            </div>
+
+            <div class="from-group">
+                <label for="GenreTextField">Genre</label>
+                <input type="text" class="form-control"
+                id="GenreTextField"
+                placeholder="Book's Genre"
+                name="genre" required>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-edit"></i> Submit</button>
+
+                <a href="/books" class="btn btn-warning">
+                    <i class="fa-undo"> Cancel</i></a>
+
+        </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<% include ../partials/footer.ejs %>
